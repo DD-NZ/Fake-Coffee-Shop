@@ -1,0 +1,30 @@
+{
+  "name": "nwen304-group-project",
+  "version": "1.0.0",
+  "description": "online coffee store",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://gitlab.ecs.vuw.ac.nz/dowdendani/nwen304-group-project.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cookie-parser": "^1.4.4",
+    "csurf": "^1.10.0",
+    "express": "^4.17.1",
+    "express-session": "^1.17.0",
+    "helmet": "^3.21.2",
+    "helmet-crossdomain": "^0.5.0",
+    "helmet-csp": "^2.9.4",
+    "nocache": "^2.1.0",
+    "passport": "^0.4.0",
+    "passport-google-oauth": "^2.0.0",
+    "pg": "^7.12.1",
+    "pg-transaction": "^1.0.4",
+    "referrer-policy": "^1.2.0"
+  }
+}

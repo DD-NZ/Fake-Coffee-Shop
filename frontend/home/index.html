@@ -1,0 +1,180 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Coffee Shop</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="" name="keywords" />
+    <meta content="" name="description" />
+
+
+
+    <!-- Main Stylesheet File -->
+    <link href="css/home.css" rel="stylesheet" />
+    <link href="css/jquery-ui.min.css" rel="stylesheet">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/home.js"></script>
+  </head>
+
+    <!--==========================
+    Header
+  ============================-->
+    <header id="header">
+      <div class="container">
+
+        <h1>Coffee Shop</h1>
+        <nav id="nav-menu-container">
+          <div id = "usernav">
+            <button id = "productsBtn" class="navbtn">Products</button>
+            <button id = "cartBtn" class="navbtn">Cart</button>
+            <button id = "orderHistory" class="navbtn">Order History</button>
+            <button id = "loginBtn" class="navbtn">Login</button>
+          </div>
+          <div id = "adminnav">
+            <button id = "addProductsBtn" class="navbtn">Add Products</button>
+            <button id = "deleteProductsBtn" class="navbtn">Delete Products</button>
+            <button id = "editOrdersBtn" class="navbtn">Edit Order History</button>
+            <button id = "adminlogout" class="navbtn">Logout</button>
+          </div>
+
+        </nav>
+
+      </div>
+    </header>
+
+
+    <!--==========================
+      Pricing Section
+    ============================-->
+    <section id="products" class="section-bg">
+      <div class="container">
+        <div class="section-header">
+          <h3 class="section-title">Products</h3>
+          <span class="section-divider"></span>
+          <p class="section-description">These are our products</p>
+          <span class="section-divider"></span>
+          <div class = search>
+            <p>Search Items here:</p>
+            <input type="text" id="search">
+          </div>
+        </div>
+
+        <div id="productList"  class="row">
+
+        </div>
+      </div>
+    </section>
+
+    <!--==========================
+      cart section
+    ============================-->
+    <section id="cart" class="section-bg">
+      <div class="container">
+        <div class="section-header">
+          <h3 class="section-title">Your cart</h3>
+          <span class="section-divider"></span>
+          <p class="section-description">These are the items in your cart</p>
+          <span class="section-divider"></span>
+          <div class = search>
+            <p>Search Items here:</p>
+            <input type="text" id="cartSearch">
+          </div>
+        </div>
+
+        <div id="cartList"  class="row">
+
+        </div>
+      </div>
+    </section>
+
+
+  <!--==========================
+    orderHistory section
+  ============================-->
+  <section id="purchases" class="section-bg">
+    <div class="container">
+      <div class="section-header">
+        <h3 class="section-title">Order History</h3>
+        <span class="section-divider"></span>
+        <p class="section-description">These are your purchases</p>
+        <span class="section-divider"></span>
+        <div class = search>
+          <p>Search Items here:</p>
+          <input type="text" id="purchaseSearch">
+        </div>
+      </div>
+
+      <div id="purchasesList"  class="row">
+
+      </div>
+    </div>
+  </section>
+
+  <!--==========================
+    admin sections
+  ============================-->
+  <section id="admin" class="section-bg">
+    <div class="container">
+      <div class="section-header">
+        <h3 class="section-title">Administration</h3>
+        <span class="section-divider"></span>
+      </div>
+
+      <section id="addProducts" class="section-bg">
+        <div class="container">
+          <div class="section-header">
+            <h3 class="section-title">Add Products</h3>
+            <div id = addProductInput>
+              <h5 id = "addProductStatus"></h5>
+              <label >Description</label>
+              <input id="addProductDescription"  type="text" />
+              <label >Price</label>
+              <input id="addProductPrice"  type="number" />
+              <button id="addProductBtn" type="button">Add Product</button>
+            </div>
+          </div>
+
+        </div>
+      </section>
+      <section id="deleteProducts" class="section-bg">
+        <div class="container">
+          <div class="section-header">
+            <h3 class="section-title">Delete Products</h3>
+          </div>
+          <div id="deleteList"  class="row">
+
+          </div>
+
+        </div>
+      </section>
+      <section id="editOrders" class="section-bg">
+        <div class="container">
+          <div class="section-header">
+            <h3 class="section-title">Edit Order History</h3>
+          </div>
+          <div id = addProductInput>
+            <label >Search Customer</label>
+            <input id="customerSearch"  type="text" />
+            <button id="getCustomerPurchaseBtn" type="button">Search</button>
+          </div>
+          <div id="customerOrderList"  class="row">
+
+          </div>
+        </div>
+      </section>
+    </div>
+  </section>
+
+  <!--==========================
+    No authorisation popup
+  ============================-->
+  <div id="noAuth" title="You nedd to login to do this">
+    <form>
+      <p>
+        <label>Would you like to login?</label>
+
+      </p>
+    </form>
+  </div>
+
+</html>

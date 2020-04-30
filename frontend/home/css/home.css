@@ -1,0 +1,227 @@
+body {
+  background: #fff;
+  color: #666666;
+  font-family: "Open Sans", sans-serif;
+  overflow-x: hidden;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: "Montserrat", sans-serif;
+}
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+
+#header {
+  padding: 30px 100px;
+  height: 40px;
+  margin:10px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  transition: all 0.5s;
+  z-index: 997;
+}
+
+
+#header h1 {
+  font-size: 36px;
+  margin: -4px 0 0 0;
+  padding: 0;
+  line-height: 1;
+  display: inline-block;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color:   color: #000;
+}
+
+
+
+/*--------------------------------------------------------------
+# Navigation Menu
+--------------------------------------------------------------*/
+
+
+/* Nav Meu Container */
+#nav-menu-container {
+  float: right;
+  list-style: none;
+  text-decoration: none;
+  display: inline-block;
+  color: #000;
+  background:transparent;
+  border:0px;
+  outline:0px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  outline: none;
+  margin: 0px;
+}
+
+/* Nav Meu Styling */
+
+.navbtn {
+  margin: 0px 100px 0px 0px;
+  text-decoration: none;
+  display: inline-block;
+  color: #000;
+  background:transparent;
+  border:0px;
+  outline:0px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  outline: none;
+}
+
+.adminbtn{
+  margin: 0px 0px 0px 0px;
+  text-decoration: none;
+  display: inline-block;
+  color: #000;
+  background:transparent;
+  border:0px;
+  outline:0px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  outline: none;
+}
+
+
+/* Section Header
+--------------------------------*/
+
+.section-header{
+  margin: 20px;
+}
+
+.section-header .section-title {
+  font-size: 32px;
+  color: #111;
+  text-align: center;
+  font-weight: 400;
+}
+
+.section-header .section-description {
+  text-align: center;
+
+  color: #777;
+  font-style: italic;
+}
+
+.section-header .search {
+  text-align: center;
+}
+.section-header .section-divider {
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #1dc8cd;
+  background: linear-gradient(0deg, #1dc8cd 0%, #55fabe 100%);
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+
+
+/* Pricing Section
+--------------------------------*/
+
+#products, #purchases, #cart, #admin {
+
+  padding: 100px 0 60px 0;
+  overflow: hidden;
+}
+
+#products .box,#purchases .box,#cart .box,#admin .box  {
+  padding: 40px;
+  margin-bottom: 30px;
+  box-shadow: 0px 0px 30px rgba(73, 78, 92, 0.15);
+  background: #fff;
+  text-align: center;
+}
+
+#products h3,#purchases h3,#cart h3,#admin h3  {
+  font-weight: 400;
+  margin-bottom: 15px;
+  font-size: 28px;
+}
+
+#products h4, #purchases h4, #cart h4, #admin h4 {
+  font-size: 46px;
+  color: #1dc8cd;
+  font-weight: 300;
+  margin: 15px;
+}
+
+#products h4 sup, #purchases h4 sup, #cart h4 sup, #admin h4 sup {
+  font-size: 20px;
+  top: -20px;
+}
+
+#products h4 span,#purchases h4 span,#cart h4 span,#admin h4 span{
+  color: #bababa;
+  font-size: 20px;
+}
+
+
+
+ #products .btn, #cart .purchaseBtn, #cart .removeBtn, #deleteProducts .deleteBtn, .deletePurchaseBtn, .archivePurchaseBtn   {
+  background: #515e61;
+  display: inline-block;
+  padding: 6px 30px;
+  border-radius: 20px;
+  color: #fff;
+  transition: none;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Montserrat", sans-serif;
+}
+
+#products .featured, #purchases .featured, #cart .featured, #admin .featured {
+  border: 2px solid #1dc8cd;
+}
+
+#products .addToCartBtn, #purchases .addToCartBtn, #cart .addToCartBtn, #admin .addToCartBtn {
+  background: linear-gradient(45deg, #1de099, #1dc8cd);
+}
+
+#cart h6 {
+margin:0px;
+font-size: 0px;
+}
+
+/* input
+--------------------------------*/
+
+#addProductInput{
+  margin: 0px 200px 0px 200px;
+}
+
+#addProductInput input {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+#addProductInput button {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  background-color: #45a049;
+    color: white;
+}
+
+#addProductInput h5 {
+  color: green;
+}
